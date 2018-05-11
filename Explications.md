@@ -47,19 +47,19 @@ En Java le Reducer prend en paramètres un **objet clé**, la liste des **valeur
 ##### Définition du mapper
         job.setMapperClass(TokenizerMapper.class);
 
-#####  Définition du Combiner et Reducer
+##### Définition du Combiner et Reducer
         job.setCombinerClass(IntSumReducer.class);
         job.setReducerClass(IntSumReducer.class);
 
-#####   Définition des classes java pour les output
+##### Définition des classes java pour les output
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
-#####   Définition des chemins des fichiers hdfs en entrée et en sortie
+##### Définition des chemins des fichiers hdfs en entrée et en sortie
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-#####   Lancement du JOB
+##### Lancement du JOB
         System.exit(job.waitForCompletion(true) ? 0 : 1);  
 
