@@ -4,6 +4,13 @@ Ce tutorial permet de comprendre le fonctionnement du framework MapReduce dans H
 
 Merci de suivre les étapes suivantes :
 
+###.0 Jeu de données 
+Rendez-vous sur le site : http://www.gutenberg.org/catalog/
+
+Il contient des livres gratuits, nous allons choisir un livre et télécharger sa version texte.
+
+Transférez le/les livres vers HDFS
+
 ### 1. Clonez le projet en local
 `git clone https://github.com/hbellahc/mapreduce.git`
 

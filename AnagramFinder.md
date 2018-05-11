@@ -6,10 +6,12 @@ Le AnagramFinder consiste à chercher les mots qui sont composés par les mêmes
 Exemple : escorta,atroces,coteras,socrate,croates
 
 
-#### Jeu de données 
+#### 0. Jeu de données 
 Nous allons utiliser un fichier contenant les mots du dictionnaire d'une langue donnée
 
-Rendez-vous sur le site http://www.gwicks.net/dictionaries.htm et téléchargez le ou les dictionnaires qui vous conviennent
+Rendez-vous sur le site http://www.gwicks.net/dictionaries.htm et téléchargez le ou les dictionnaires qui vous conviennent.
+
+Envoyez le/les fichiers vers HDFS
 
 #### 1. Définition de la clé  
 
