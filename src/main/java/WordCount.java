@@ -45,16 +45,31 @@ public class WordCount {
     }
 
     public static void main(String[] args) throws Exception {
+
+        // Configuration du job
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "word count");
+
+        // Definition de la classe java
         job.setJarByClass(WordCount.class);
+
+        // definition du mapper
         job.setMapperClass(TokenizerMapper.class);
+
+        // definition du Combiner & Reducer
         job.setCombinerClass(IntSumReducer.class);
         job.setReducerClass(IntSumReducer.class);
+
+        // definition des classes java pour les output
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
+
+        // definition des chemins des fichiers hdfs en entrée et en sortie
+
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
+
+        // lancement du JOB
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
