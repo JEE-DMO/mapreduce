@@ -28,7 +28,7 @@ Placez-vous dans le répertoire ou se trouve le jar que l'on souhaite transfére
 `hadoop jar mapreduce-1.0-SNAPSHOT.jar WordCount /user/hdfs /user/hdfs/out`
 #### Monitorez le job 
 Dans les logs vous allez voir une ligne que vous donne l'url pour monitorer votre job
-`18/05/11 08:54:14 INFO mapreduce.Job: The url to track the job: http://sandbox-hdp.hortonworks.com:8088/proxy/application_1526028785803_0001/`
+18/05/11 08:54:14 INFO mapreduce.Job: The url to track the job: **http://sandbox-hdp.hortonworks.com:8088/proxy/application_1526028785803_0001/**
 
 
 
