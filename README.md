@@ -4,13 +4,13 @@ Ce tutorial permet de comprendre le fonctionnement du framework MapReduce dans H
 
 Merci de suivre les étapes suivantes :
 
-### Clonez le projet en local
+### 1. Clonez le projet en local
 `git clone https://github.com/hbellahc/mapreduce.git`
 
-### Buildez le projet en local 
+### 2. Buildez le projet en local 
 `mvn clean install` ou un build classique avec votre IDE préféré
 
-### Transférez le jar sur la machine sandbox
+### 3. Transférez le jar sur la machine sandbox
 Vous avez plusieurs possibilités pour effectuer cette action :
 
 #### Via un client SCP (winscp, filezilla etc)
@@ -19,7 +19,7 @@ Placez-vous dans le répertoire ou se trouve le jar que l'on souhaite transfére
  
 `stp -P 2222 <chemin local> root@sandbox-hdp.hortonworks.com:<chemin dans la sandbox>`
 
-### Exécutez le job MapReduce sur la SandBox 
+### 4. Exécutez le job MapReduce sur la SandBox 
 #### Connectez-vous  en ssh 
 `ssh root@sandbox-hdp.hortonworks.com`
 #### Placez-vous dans le répértoire ou se trouve votre jar
