@@ -27,7 +27,8 @@ Il retourne un couple clé valeur (la clé que vous avez défini et l'anagramme)
 
 #### 3. Reducer   
   
-`public void reduce(Text key, Iterable<IntWritable> values,Context context){}`
+`public void reduce(Text key, Iterable<Text> values, Context context)  {}`
+
 
 Le reducer recevra une **clé** et l’ensemble des **valeurs** de cette **clé** et fera en sorte de **concaténer** les anagrammes.
 
