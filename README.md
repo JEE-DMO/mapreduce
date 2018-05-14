@@ -1,4 +1,4 @@
-#     Hadoop MapReduce WordCount 
+#Hadoop MapReduce WordCount 
    
 Ce tutorial permet de comprendre le fonctionnement du framework MapReduce dans Hadoop
 
